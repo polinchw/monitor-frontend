@@ -31,7 +31,7 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 Run ./build.sh   
 
-This will build the docker image.
+This will build the docker image polinchw/monitor-frontend
 
 ## Docker Run
 
