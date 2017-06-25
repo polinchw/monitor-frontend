@@ -30,3 +30,15 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Docker Build
+
+Run ./build.sh   
+
+This will build the docker image.
+
+## Docker Run
+
+Run docker-compose up -d
+
+This will start a docker container on port 8000:80 (Docker external:internal format)
