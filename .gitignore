@@ -49,3 +49,5 @@ fabric.properties
 /node_modules/**
 /e2e/*.json
 /e2e/*.ts
+/.idea/
+.idea/
