@@ -5,7 +5,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## NodeJS and NPM Install on Ubuntu
 
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+
 sudo apt install nodejs
+
 sudo npm install -g @angular/cli
 
 ## Development server
