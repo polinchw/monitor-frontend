@@ -2,9 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.3.
 
-## NPM Install
+## NodeJS and NPM Install on Ubuntu
 
-Run 'npm install' to download all the npm files locally.
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt install nodejs
+sudo npm install -g @angular/cli
 
 ## Development server
 
