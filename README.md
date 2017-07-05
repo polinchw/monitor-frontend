@@ -44,7 +44,7 @@ Run docker-compose up -d
 This will start a docker container on port 8000:80 (Docker external:internal format)
 
 
-## Docker Machine/Swarm Deployment
+## Docker Machine/Swarm Deployment on AWS
 
 1. Create a Docker Machine (hopefully you an reuse one in your infrastructure).
 2. Git clone this repo on your Docker Machine: https://github.com/polinchw/docker-tools
