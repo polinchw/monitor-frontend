@@ -51,4 +51,4 @@ This will start a docker container on port 8000:80 (Docker external:internal for
 3. chmod u+x docker-tools/docker-machine/docker-swarm/aws/bash-scripts/create-swarm-instances.sh 
 4. Create a Docker Swarm under the 'control' of the Docker Machine to run the monitor-frontend on.  This will install the Docker Swarm on your selected AWS VPC and subnet.
     
-  ./docker-tools/docker-machine/docker-swarm/aws/bash-scripts/create-swarm-instances.sh AKIAJB7DZD4I6QA2XBRA <AWS-SECRET-KEY> vpc-9dc174e4 subnet-5501b679 polinchw monitor-frontend 1 ami-8887be9e WebServerSecurityGroup
+  ./docker-tools/docker-machine/docker-swarm/aws/bash-scripts/create-swarm-instances.sh AKIAJB7DZD4I6QA2XBRA xxxx vpc-9dc174e4 subnet-5501b679 polinchw monitor-frontend 1 ami-8887be9e WebServerSecurityGroup
