@@ -46,15 +46,15 @@ This will start a docker container on port 8000:80 (Docker external:internal for
 
 ## Docker Machine/Swarm Deployment on AWS
 
-1. Create a Docker Machine (hopefully you an reuse one in your infrastructure).
+1. Create a <b>Docker Machine</b> (hopefully you an reuse one in your infrastructure).
 2. Git clone this repo on your Docker Machine: https://github.com/polinchw/docker-tools
 3. chmod u+x docker-tools/docker-machine/docker-swarm/aws/bash-scripts/create-swarm-instances.sh 
-4. Create a Docker Swarm under the 'control' of the Docker Machine to run the monitor-frontend on.  This will install the Docker Swarm on your selected AWS VPC and subnet.
+4. Create a <b>Docker Swarm</b> under the <u>control</u> of the <b>Docker Machine</b> to run the monitor-frontend on.  This will install the Docker Swarm on your selected AWS VPC and subnet.
     
   ./docker-tools/docker-machine/docker-swarm/aws/bash-scripts/create-swarm-instances.sh AKIAJB7DZD4I6QA2XBRA xxxx vpc-9dc174e4 subnet-5501b679 polinchw monitor-frontend 1 ami-8887be9e WebServerSecurityGroup
   
-5. Run the monitor-frontend app in the Docker Swarm by running this command <b>on</b> the Docker Machine.
+5. Create a <b>Docker Service</b>.  Run the monitor-frontend app in the Docker Swarm by running this command <b>on</b> the Docker Machine.
 
   docker-machine ssh monitor-frontend-swarm-master 'sudo docker service create --replicas 2 --name monitor-frontend -p 80:80 polinchw/monitor-frontend'
 
-6. You probably want to add an AWS load balancer to load balancer the at this point. 
+6. You probably want to add a AWS load balancer to load balance the monitor-frontend at this point. 
