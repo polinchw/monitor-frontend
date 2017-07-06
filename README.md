@@ -58,3 +58,12 @@ This will start a docker container on port 8000:80 (Docker external:internal for
   docker-machine ssh monitor-frontend-swarm-master 'sudo docker service create --replicas 2 --name monitor-frontend -p 80:80 polinchw/monitor-frontend'
 
 6. You probably want to add a AWS load balancer to load balance the monitor-frontend at this point. 
+
+## Update a running Docker Service from Docker Machine
+
+1. docker-machine ssh monitor-frontend-swarm-master docker service update --image polinchw/monitor-frontend:latest monitor-frontend
+
+## Update a running Docker Service from a Docker Swarm Master
+
+1. docker-machine ssh monitor-frontend-swarm-master    (this logs you on to the remote running node)
+2. docker service update --image polinchw/monitor-frontend:latest monitor-frontend
